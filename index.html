@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f4ef" />
+    <meta name="description" content="AMIDE is the Adaptive Machine Intelligence Development Engine - a self-extending coding agent with persistent iPython/RLM sessions, a Cordis Metaframework runtime, and a Monotonic Prompt Architecture that cuts token spend and raises cache-hit rate manyfold." />
+    <meta property="og:title" content="AMIDE - Adaptive Machine Intelligence Development Engine" />
+    <meta property="og:description" content="One self-extending agent. Any surface. Token-efficient by design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amide.dev/" />
+    <link rel="icon" href="./amide-logo-black.png" />
+    <link rel="canonical" href="https://amide.dev/" />
+    <title>AMIDE - Adaptive Machine Intelligence Development Engine</title>
+    <script>
+      (() => {
+        const saved = localStorage.getItem('amide-theme')
+        const theme = saved === 'light' || saved === 'dark'
+          ? saved
+          : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = theme
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
