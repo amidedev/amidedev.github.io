@@ -26,7 +26,10 @@ export function DocsPage() {
         <p className="docs-lede">AMIDE runs on persistent iPython/RLM sessions, composed through a Cordis Metaframework runtime, and disciplined by a Monotonic Prompt Architecture that keeps token spend flat and prompt-cache hits high as sessions grow.</p>
 
         <h2 id="getting-started">Getting started</h2>
-        <p>AMIDE isn&apos;t published to npm yet, so it runs from source. Node.js 22.8.0+ is required. The launcher preserves your caller working directory, so you can run it against any project.</p>
+        <p>Node.js 22.8.0+ is required. Install AMIDE globally with the installer, or via npm directly.</p>
+        <CommandBox command="curl -fsSL https://amide.dev/install.sh | sh" label="Install AMIDE" />
+        <CommandBox command="npm install -g @webboxes/amide" label="Or install with npm" />
+        <p>To run from source instead:</p>
         <CommandBox command="git clone git@github.com:amidedev/amide.git && cd amide && npm ci" label="Clone and install" />
         <CommandBox command="/path/to/amide/amide.sh" label="Run from any directory" />
         <div className="docs-notice">

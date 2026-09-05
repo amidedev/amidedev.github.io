@@ -1,6 +1,7 @@
 import { Github, Menu, Star, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import { AnnouncementBar } from './AnnouncementBar'
 import { Brand } from './Brand'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -39,6 +40,7 @@ export function Shell() {
 
   return (
     <div className="site-shell min-h-dvh bg-canvas text-ink">
+      <AnnouncementBar />
       <header className="site-header">
         <div className="site-header-inner">
           <Brand />

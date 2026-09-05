@@ -20,14 +20,14 @@ export function HomePage() {
           <h1>The coding agent that<br /><strong>doesn&apos;t burn your tokens.</strong></h1>
           <p className="hero-lede">AMIDE runs on a persistent iPython/RLM session, composed through a Cordis Metaframework runtime, and disciplined by a Monotonic Prompt Architecture that keeps every request append-only. The result: a drastically higher prompt-cache hit rate and a fraction of the token spend of a harness that resends its history every turn.</p>
           <div className="hero-cta">
-            <a className="button" href="https://github.com/amidedev/amide#getting-started" target="_blank" rel="noreferrer">Run it from source <ArrowRight aria-hidden="true" /></a>
+            <a className="button" href="https://www.npmjs.com/package/@webboxes/amide" target="_blank" rel="noreferrer">Get started <ArrowRight aria-hidden="true" /></a>
             <Link className="button secondary" to="/docs">Read the architecture</Link>
             <a className="button secondary" href="https://github.com/amidedev/amide" target="_blank" rel="noreferrer">
               <Star aria-hidden="true" />
               Star AMIDE on GitHub
             </a>
           </div>
-          <CommandBox command="git clone git@github.com:amidedev/amide.git && cd amide && npm ci && ./amide.sh" label="AMIDE isn't published yet - run it from source" />
+          <CommandBox command="curl -fsSL https://amide.dev/install.sh | sh" label="Install AMIDE" />
         </div>
       </section>
 
